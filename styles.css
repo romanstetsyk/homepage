@@ -134,7 +134,7 @@ body {
 }
 
 .intro__icon-wrapper {
-  margin-right: 30px;
+  margin-right: 2rem;
   width: 30px;
   display: flex;
   justify-content: center;
@@ -143,9 +143,6 @@ body {
 .intro__icon {
   height: 1.1428rem;
   vertical-align: text-bottom;
-}
-
-.intro__icon path {
   fill: var(--text-decoration-color);
 }
 
@@ -160,9 +157,37 @@ body {
   margin-bottom: 15px;
 }
 
-.skills__text {
-  color: var(--secondary-text-color);
-  text-align: justify;
+.skills__badge {
+  font-family: "Courier New", Courier, monospace;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+  border: 1px solid var(--icon-color);
+  border-radius: 0.25em;
+  padding: 0.5em 1em;
+  margin: 0.125rem 0;
+  transition-property: color, border-color;
+  transition-duration: var(--hover-animation-duration);
+  transition-timing-function: var(--hover-animation-function);
+}
+
+.skills__badge:hover {
+  color: var(--text-decoration-color);
+  border-color: var(--text-decoration-color);
+}
+
+.skills__badge:hover .skills__icon {
+  fill: var(--text-decoration-color);
+}
+
+.skills__icon {
+  height: 20px;
+  width: 20px;
+  fill: var(--icon-color);
+  transition-property: fill;
+  transition-duration: var(--hover-animation-duration);
+  transition-timing-function: var(--hover-animation-function);
 }
 
 /* Experience and additional info styles */

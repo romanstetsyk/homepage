@@ -194,20 +194,13 @@ body {
 
 .experiences {
   flex: 1 1 60%;
-  margin-right: 50px;
+  margin-right: 3rem;
 }
 
 .experiences__header {
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
-}
-
-.experiences__company-header-durability {
-  color: var(--durability-text-color);
-  text-align: left;
-  margin-bottom: 10px;
-  font-size: 15px;
 }
 
 .experiences__company-header-name {
@@ -226,7 +219,6 @@ body {
 .experiences__company-project-role {
   color: var(--durability-text-color);
   text-align: left;
-  margin-bottom: 10px;
   font-size: 15px;
 }
 
@@ -239,6 +231,16 @@ body {
 .experiences__company-project-responsibilities {
   color: var(--secondary-text-color);
   padding-left: 20px;
+}
+
+.main-info {
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 36rem) {
+  .main-info {
+    flex-direction: column;
+  }
 }
 
 .additional-info {

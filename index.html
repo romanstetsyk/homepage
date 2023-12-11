@@ -5,6 +5,10 @@
     <title>Résumé</title>
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Resume - Roman Stetsyk. Full Stack Software Developer"
+    />
   </head>
   <body>
     <main class="resume">
@@ -18,7 +22,7 @@
           </div>
 
           <address class="contact_info_container">
-            <ul role="list" class="contact-info__block">
+            <ul class="contact-info__block">
               <li class="contact-info__block-item">
                 <a
                   href="mailto:romanstetsyk0@gmail.com"
@@ -81,33 +85,13 @@
                   <span>Codewars</span>
                 </a>
               </li>
-
-              <li class="contact-info__block-item">
-                <a
-                  href="https://www.google.com/maps/place/Figueira+da+Foz"
-                  rel="author"
-                  target="_blank"
-                  class="contact-info__item"
-                >
-                  <div class="contact-info__item-icon-wrapper">
-                    <svg
-                      class="contact-info__item-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="20"
-                      width="20"
-                    >
-                      <use href="./assets/symbol-defs.svg#icon-location" />
-                    </svg>
-                  </div>
-                  <span>Figueira da Foz, Portugal</span>
-                </a>
-              </li>
             </ul>
           </address>
         </div>
       </section>
 
       <section class="container">
+        <h3 class="visually-hidden">Introduction</h3>
         <div class="resume__block">
           <div class="intro">
             <div class="intro__icon-wrapper">
@@ -293,105 +277,153 @@
                   <h3 class="experiences__company-header-name">Projects</h3>
                 </div>
 
-                <div class="experiences__company-project">
-                  <a
-                    href="https://github.com/Together-100Devs/Together"
-                    target="_blank"
-                    class="experiences__company-project-role"
-                  >
-                    Github
-                  </a>
-                  <h3 class="experiences__company-project-name">
-                    Together (team project)
-                  </h3>
-                  <ul class="experiences__company-project-responsibilities">
-                    <li>
-                      Scheduling Logic Implementation with Node.js and Temporal
-                      API. This involved creating a flexible system to handle
-                      various event types and timezones efficiently.
-                    </li>
-                    <li>
-                      Backend unit testing with Jest. I verified reliability of
-                      the scheduling system under different scenarios and edge
-                      cases, contributing to a stable and bug-free solution
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="experiences__company-project">
-                  <a
-                    href="https://github.com/romanstetsyk/PixelSqueeze"
-                    target="_blank"
-                    class="experiences__company-project-role"
-                  >
-                    Github
-                  </a>
-                  <h3 class="experiences__company-project-name">
-                    PixelSqueeze
-                  </h3>
-                  <ul class="experiences__company-project-responsibilities">
-                    <li>
-                      Built a web application built with React that lets you
-                      compress images and convert to .webp / .jpg / .png file
-                      formats in browser.
-                    </li>
-                    <li>
-                      Leveraged File API to efficiently handle file operations
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="experiences__company-project">
-                  <a
-                    href="https://github.com/romanstetsyk/night-sky-watch"
-                    target="_blank"
-                    class="experiences__company-project-role"
-                  >
-                    Github
-                  </a>
-                  <h3 class="experiences__company-project-name">
-                    Night Sky Watch
-                  </h3>
-                  <ul class="experiences__company-project-responsibilities">
-                    <li>
-                      My primary focus was on integrating the NASA API to fetch
-                      real-time data on asteroids closest to Earth. Leveraging
-                      Node.js's asynchronous capabilities, I designed a robust
-                      backend system that communicated with the NASA API to
-                      retrieve and process asteroid information dynamically.
-                    </li>
-                  </ul>
-                </div>
+                <ul class="experiences__company-list">
+                  <li class="experiences__company-project">
+                    <a
+                      href="https://github.com/Together-100Devs/Together"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="experiences__company-project-role"
+                    >
+                      Github
+                    </a>
+                    <h3 class="experiences__company-project-name">
+                      Together (team project)
+                    </h3>
+                    <ul class="experiences__company-project-responsibilities">
+                      <li>
+                        Scheduling Logic Implementation with Node.js and
+                        Temporal API. This involved creating a flexible system
+                        to handle various event types and timezones efficiently.
+                      </li>
+                      <li>
+                        Backend unit testing with Jest. I verified reliability
+                        of the scheduling system under different scenarios and
+                        edge cases, contributing to a stable and bug-free
+                        solution
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="experiences__company-project">
+                    <a
+                      href="https://github.com/romanstetsyk/PixelSqueeze"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="experiences__company-project-role"
+                    >
+                      Github
+                    </a>
+                    <h3 class="experiences__company-project-name">
+                      PixelSqueeze
+                    </h3>
+                    <ul class="experiences__company-project-responsibilities">
+                      <li>
+                        Built a web application built with React that lets you
+                        compress images and convert to .webp / .jpg / .png file
+                        formats in browser.
+                      </li>
+                      <li>
+                        Leveraged File API to efficiently handle file operations
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="experiences__company-project">
+                    <a
+                      href="https://github.com/romanstetsyk/night-sky-watch"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="experiences__company-project-role"
+                    >
+                      Github
+                    </a>
+                    <h3 class="experiences__company-project-name">
+                      Night Sky Watch
+                    </h3>
+                    <ul class="experiences__company-project-responsibilities">
+                      <li>
+                        My primary focus was on integrating the NASA API to
+                        fetch real-time data on asteroids closest to Earth.
+                        Leveraging Node.js's asynchronous capabilities, I
+                        designed a robust backend system that communicated with
+                        the NASA API to retrieve and process asteroid
+                        information dynamically.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
 
             <div class="additional-info fv">
               <div class="additional-info__education">
                 <h3 class="additional-info__education-header">Education</h3>
-                <div class="additional-info__education-university">
-                  <span
-                    class="additional-info__education-university-durability"
-                  >
-                    2021
-                  </span>
-                  <h3 class="additional-info__education-university-speciality">
-                    Cat track
-                  </h3>
-                  <p class="additional-info__education-university-name">
-                    Binary Studio Academy
-                  </p>
-                </div>
+
+                <ul class="additional-info__education-list">
+                  <li class="additional-info__education-university">
+                    <span
+                      class="additional-info__education-university-durability"
+                    >
+                      2022-2023
+                    </span>
+                    <h3
+                      class="additional-info__education-university-speciality"
+                    >
+                      #100devs - bootcamp
+                    </h3>
+                    <a
+                      href="https://leonnoel.com/100devs/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="additional-info__education-university-name"
+                    >
+                      https://leonnoel.com/100devs/
+                    </a>
+                  </li>
+                  <li class="additional-info__education-university">
+                    <span
+                      class="additional-info__education-university-durability"
+                    >
+                      2021
+                    </span>
+                    <h3
+                      class="additional-info__education-university-speciality"
+                    >
+                      cs50x Introduction to Computer Science
+                    </h3>
+                    <a
+                      href="https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="additional-info__education-university-name"
+                    >
+                      edX.org
+                    </a>
+                  </li>
+                  <li class="additional-info__education-university">
+                    <span
+                      class="additional-info__education-university-durability"
+                    >
+                      In a time of ancient gods, warlords and kings
+                    </span>
+                    <h3
+                      class="additional-info__education-university-speciality"
+                    >
+                      Micro and Nanotechnology MSc
+                    </h3>
+                    <p class="additional-info__education-university-name">
+                      Uzhhorod National University
+                    </p>
+                  </li>
+                </ul>
               </div>
 
               <div class="additional-info__languages">
                 <h3 class="additional-info__languages-header">Languages</h3>
-                <p class="additional-info__languages-item">Meow dialect</p>
-                <p class="additional-info__languages-item">
-                  Ukrainian (understand)
-                </p>
-                <p class="additional-info__languages-item">
-                  English (don't understand)
-                </p>
+                <ul>
+                  <li class="additional-info__languages-item">Ukrainian</li>
+                  <li class="additional-info__languages-item">English</li>
+                  <li class="additional-info__languages-item">Portuguese</li>
+                </ul>
               </div>
             </div>
           </div>
